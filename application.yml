@@ -1,0 +1,4 @@
+#TODO put database connection details here
+#TODO maybe look into security with config server
+test:
+  testtext: CONFIG_IS_HERE

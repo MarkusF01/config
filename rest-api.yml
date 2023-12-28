@@ -1,6 +1,17 @@
 test:
   rest-test: REST_CONFIG_IS_ALSO_HERE
 
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql-3b-fh-41c4.a.aivencloud.com:20557/defaultdb?sslMode=REQUIRED
+    username: avnadmin
+    password: AVNS_oLeNCKj9lV4WKoo4itV
+
 springdoc:
   api-docs:
     path: /api-docs

@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+    #TODO closer look at load balancing
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${service-registry.route}/eureka/
+service-registry:
+  route: localhost:8761
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /gateway/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger
+    urls:
+      - url: /gateway/api-docs
+        name: API Gateway
+      - url: /rest-api/api-docs
+        name: REST-API

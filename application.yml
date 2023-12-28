@@ -1,10 +1,2 @@
 #TODO put database connection details here
 #TODO maybe look into security with config server
-test:
-  testtext: CONFIG_IS_HERE
-
-spring:
-  datasource:
-    url: jdbc:mysql://mysql-3b-fh-41c4.a.aivencloud.com:20557/defaultdb?sslMode=REQUIRED
-    username: avnadmin
-    password: AVNS_oLeNCKj9lV4WKoo4itV

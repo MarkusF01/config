@@ -1,6 +1,9 @@
 test:
   rest-test: REST_CONFIG_IS_ALSO_HERE
 
+server:
+  port: 8089
+
 spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect

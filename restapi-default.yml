@@ -1,12 +1,6 @@
 test:
   testtext: CONFIG_IS_HERE
-
-server:
-  port: 8088
-
-config-server:
-  route: localhost:8888
-
+  
 service-registry:
   route: localhost:8761
 

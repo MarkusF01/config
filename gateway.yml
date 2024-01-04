@@ -4,15 +4,18 @@ server:
 spring:
   cloud:
     gateway:
-      corsConfigurations:
-        '[/**]':
-          allowedOrigins:
-            - "http://localhost:4200"
-          allowedMethods:
-            - GET
-            - POST
-            - PUT
-            - DELETE
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
       discovery:
         locator:
           enabled: true
